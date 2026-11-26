@@ -1,1 +1,10 @@
-
+sentence = "I am an NLPer"
+word = sentence.split()
+word1 = []
+for i in range(len(sentence)-2):
+    word1.append(sentence[i:i+3])
+print(word1)
+word2 = []
+for i in range(len(word)-1):
+    word2.append(word[i] + ' ' + word[i+1])
+print(word2)
