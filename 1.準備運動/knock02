@@ -1,1 +1,5 @@
-
+word = 'stressed'
+word_rev = ''
+for i in range(len(word)-1, -1, -1):
+    word_rev += word[i]
+print(word_rev)
