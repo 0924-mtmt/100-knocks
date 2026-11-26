@@ -1,1 +1,11 @@
+def cipher(sentence):
+    word = ''
+    for char in sentence:
+        if char.islower():
+            word += chr(219 - ord(char))
+        else:
+            word += char
+    return word
 
+print(cipher('I am an NLPer'))
+print(cipher(cipher('I am an NLPer')))
