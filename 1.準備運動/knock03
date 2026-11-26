@@ -1,1 +1,8 @@
-
+sentence = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+sentence = sentence.replace(',', '')
+sentence = sentence.replace('.', '')
+sentence = sentence.split()
+word6 = []
+for word in sentence:
+    word6.append(len(word))
+print(word6)
