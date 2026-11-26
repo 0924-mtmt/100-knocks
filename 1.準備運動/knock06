@@ -1,1 +1,18 @@
+word1 = 'paraparaparadise'
+word2 = 'paragraph'
 
+def ngram(sentence, n):
+    word = []
+    for i in range(len(sentence)-n+1):
+        word.append(sentence[i:i+n])
+    return word
+
+X = ngram(word1, 2)
+Y = ngram(word2, 2)
+print(X)
+print(Y)
+print(set(X) | set(Y))
+print(set(X) & set(Y))
+print(set(X) - set(Y))
+print('se' in set(X))
+print('se' in set(Y))
